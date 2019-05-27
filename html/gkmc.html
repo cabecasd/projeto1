@@ -1,0 +1,117 @@
+<html>
+
+<head>
+<style>
+  body {
+    background-color: #f2f2f2;
+  }
+  .navb {
+    background-color: #333;
+    overflow: hidden;
+    color: #f2f2f2;
+    display: block;
+  }
+  .navb a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navb a:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  a{color:#f2f2f2}
+  .info a {
+    color:black;
+    text-decoration: none;
+  }
+  .desc {
+    font-size: 20px;
+    width: 900px
+  }
+  #more {display: none;}
+  .tracklist a {
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    margin-left: 20px;
+    width: 700px;
+
+  }
+  ul li {
+    border: 1px solid #333;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+  }
+  ul li a.hover{
+    background-color: #afafaf;
+  }
+</style>
+</head>
+
+<body>
+  <div class="navb">
+  <a href="index.html"> Homepage </a>
+  <a href="galeria.html"> Gallery </a>
+  <a href="https://www.instagram.com/cabecasd/" target="_blank"> Instagram </a>
+  <a href="https://twitter.com/AtLeaztImNotGay" target="_blank"> Twitter </a>
+  <a href="https://www.youtube.com/user/XDturboCF/videos" target="_blank"> Mihail </a>
+  </div>
+
+  <div class="info">
+    <img src="gkmc.jpg" style="float:left">
+    <h2 style="margin-left: 230px">  Good Kid Maad City </h2>
+    <h2 style="margin-left: 230px">  By <a href="https://en.wikipedia.org/wiki/Kendrick_Lamar" target="_blank"> Kendrick Lamar</a></h2>
+    <div class="desc">
+    <p style="margin-left: 240px"> Good Kid, M.A.A.D City (stylized as good kid, m.A.A.d city) is the second studio album by American rapper Kendrick Lamar. It was released on October 22, 2012, by Aftermath Entertainment, Interscope Records, and Top Dawg Entertainment.<span id="dots">...</span><span id="more"> The album is Lamar's major label debut, after his independently released first album Section.80 in 2011 and his signing to Aftermath and Interscope the following year.
+        Good Kid, M.A.A.D City was recorded mostly at several studios in California, with producers such as Dr. Dre, Just Blaze, Pharrell Williams, Hit-Boy, Scoop DeVille, Jack Splash and T-Minus, among others, contributing to the album. Billed as a "short film by Kendrick Lamar" on the album cover, the concept album follows the story of Lamar's teenage experiences in the drug-infested streets and gang lifestyle of his native Compton. The album received widespread acclaim from critics, who
+        praised its thematic scope and Lamar's lyrics. It earned Lamar four Grammy Award nominations at the 56th Grammy Awards, including Album of the Year.</span></p>
+        <button onclick="de()" id="myBtn" style="margin-left:300px">Ler Mais</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="tracklist">
+    <ul>
+      <li><a href="sherane.html">Sherane a.k.a Master Splinter's Daughter</li>
+      <li><a href="sherane.html">Bitch, Don't Kill My Vibe</li>
+      <li><a href="sherane.html">Backseat Freestyle</li>
+      <li><a href="sherane.html">The Art of Peer Pressure</li>
+      <li><a href="sherane.html">Money Trees (featuring Jay Rock)</li>
+      <li><a href="sherane.html">Poetic Justice" (featuring Drake)</li>
+      <li><a href="sherane.html">Good Kid</li>
+      <li><a href="sherane.html">M.A.A.D City (featuring MC Eiht)</li>
+      <li><a href="sherane.html">Swimming Pools (Drank)</li>
+      <li><a href="sherane.html">Sing About Me, I'm Dying of Thirst</li>
+      <li><a href="sherane.html">Real (featuring Anna Wise)</li>
+      <li><a href="sherane.html">Compton (featuring Dr. Dre)</li>
+
+
+
+    </ul>
+  </div>
+  <script>
+  function de() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+</body>
+</html>
